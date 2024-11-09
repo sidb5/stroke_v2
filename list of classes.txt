@@ -1,0 +1,4 @@
+Hemorrhagic
+Ischaemic
+NORMAL
+Unlabeled
