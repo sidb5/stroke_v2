@@ -6,6 +6,7 @@ from pages.functions import create_drive_service, upload_file_to_drive
 import os
 import time
 import uuid
+from pages.config_loader import load_config
 
 # Load the YOLOv8 model using your trained weights
 model = YOLO('assets/model_best.pt')
@@ -34,7 +35,9 @@ def detect_disease(img_path):
 _, col1, _ = st.columns([1,4.5,1])
 
 # Specify the default folder ID for image upload
-default_folder_id = "1ZJl54Kl-kpfPY6WbbSW29YTmDxkejN1F"
+# Replace the hardcoded folder ID with config
+config = load_config()
+default_folder_id = config["google_drive"]["folders"]["default"]
 
 # Initialize Google Drive service once
 service = create_drive_service()
