@@ -2,7 +2,7 @@
 
 Streamlit application for brain stroke image screening with a custom YOLOv8 model. The app supports optional username/password login backed by Firebase Firestore, runs inference on uploaded images, and uploads original files to Google Drive for storage.
 
-This repository is a simple demo application intended to showcase the underlying model behavior. It is not the full production product, and it does not include the broader UX, workflow controls, integrations, reliability features, or other product-layer capabilities that exists in customer-facing deployments built around these models.
+> This repository is a simple demo application intended to showcase the underlying model behavior. It is not the full production product, and it does not include the broader UX, workflow controls, integrations, reliability features, or other product-layer capabilities that exists in customer-facing deployments built around these models.
 
 ## What the app does
 
